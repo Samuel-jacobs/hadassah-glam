@@ -44,7 +44,7 @@ p {
 }
 
 #about-section {
-	background-image: url('img/black-woman.png'), linear-gradient(white, pink);
+	background-image: url('img/black-woman.png'), linear-gradient(pink, white);
 	background-repeat: no-repeat;
 	background-position: left bottom;
 	padding: 80px 20px;
@@ -55,7 +55,7 @@ p {
 	text-align: center;
 }
 #services {
-	padding: 50px 80px;
+	padding: 50px;
 	text-align: center;
 }
 .service-wrapper .card {
