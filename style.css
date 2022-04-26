@@ -9,13 +9,18 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Kaushan Script', cursive;
 }
 p {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Patrick Hand', cursive;
 }
 .navbar-brand {
 	font-family: 'Kaushan Script', cursive;
 	background-color: pink;
 	padding: 5px 10px;
 	border-radius: 5px;
+	color: black;
+}
+.navbar-brand:hover {
+	color: black;
+	opacity: 0.8;
 }
 
 .carousel-item {
@@ -23,7 +28,7 @@ p {
 }
 .carousel-item img {
 	object-fit: cover;
-	filter: brightness(80%);
+	filter: brightness(70%);
 }
 
 .carousel-caption {
@@ -32,11 +37,15 @@ p {
 .carousel-caption h1 {
 	font-size: 3rem;
 }
+.carousel-caption p {
+	padding-bottom: 20px;
+}
 .carousel-caption a {
 	border: 2px solid pink;
 	color: white;
 	padding: 5px 20px;
 	border-radius:  5px;
+	margin-top: 20px;
 }
 .carousel-caption a:hover {
 	text-decoration: none;
@@ -227,10 +236,21 @@ p {
 	}
 }
 @media screen and (min-width: 768px) {
-
+	.nav-item {
+		padding: 10px;
+	}
+	.nav-link {
+		color: black;
+	}
+	.nav-link:hover {
+		border: 2px solid pink;
+		color: black;
+		border-radius: 5px;
+	}
 	.about-text {
 		padding-right: 150px;
 		padding-top: 50px;
+
 	}
 
 	#services {
@@ -247,6 +267,9 @@ p {
 	}
 	.contact-info {
 		background: none;
+	}
+	.contact-info h6 {
+		font-size: 1.5rem;
 	}
 
 	.footer {
