@@ -57,13 +57,37 @@ p, a {
 }
 
 #about-section {
-	background-image: url('img/black-woman.png'), linear-gradient(pink, rgb(220, 220, 220));
+	background-image: url('img/woman-bg.png'), linear-gradient(pink, rgb(220, 220, 220));
 	background-repeat: no-repeat;
 	background-position: left bottom;
 	padding: 80px 20px;
 	height: 90vh;
+	line-height: 1.5;
+	font-size: 1.5rem;
 }
 
+#about-section .about-text h1 {
+	font-size: 3rem;
+	font-weight: bolder;
+}
+blockquote {
+  background: transparent;
+  border-left: 10px solid pink;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  
+}
+blockquote:before {
+  
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 20px;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
 #services h2 {
 	text-align: center;
 }
@@ -84,7 +108,6 @@ p, a {
 	margin: 20px 0;
 	border-radius: 5px;
 	background-color: pink;
-	color: White;
 }
 .service-item-text {
 	text-align: center;
@@ -135,14 +158,39 @@ p, a {
 	text-decoration: none;
 }
 
+#price-list {
+	padding: 30px;
+	margin-bottom: none;
+	background: linear-gradient(white, pink);
+}
+#price-list h1 {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.studio-item {
+	display: flex;
+	justify-content: space-between;
+}
+.bridal {
+	font-weight: bolder;
+	font-size: 1.2rem;
+}
+
+.line {
+	margin: 0;
+	height: 1px;
+}
 
 #contact {
-	padding-top: 20px;
+	margin-top: none;
+	padding-top: 50px;
 	background-color: pink;
 }
 #contact h2 {
 	text-align: center;
 	padding-bottom: 20px;
+
 }
 #contact .contact-form {
 	border: 2px solid white;
@@ -177,6 +225,10 @@ p, a {
 	padding-top: 10px;
 	font-size: 20px;
 }
+.email .contact-info_text a{
+	color: black;
+}
+
 
 
 .socials {
@@ -244,6 +296,10 @@ p, a {
 	.about-text {
 		color: white;
 	}
+
+	.contact-info h6 {
+		font-size: 1.3rem;
+	}
 }
 @media screen and (min-width: 768px) {
 	.nav-item {
@@ -256,6 +312,10 @@ p, a {
 		border: 2px solid pink;
 		color: black;
 		border-radius: 5px;
+	}
+
+	#about-section {
+		background-image: url('img/woman-bg.png'), linear-gradient(pink, white);
 	}
 	.about-text {
 		padding-right: 150px;
@@ -272,6 +332,8 @@ p, a {
 	#services .service-link {
 		font-size: 1.2rem;
 	}
+
+
 	#contact {
 		background: linear-gradient( pink, white);
 	}
@@ -280,6 +342,11 @@ p, a {
 	}
 	.contact-info h6 {
 		font-size: 1.5rem;
+	}
+
+	#price-list {
+		padding-left: 30%;
+		padding-right: 30%;
 	}
 
 	.footer {
