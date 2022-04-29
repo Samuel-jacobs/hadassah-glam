@@ -26,7 +26,7 @@ p, a {
 }
 .carousel-item img {
 	object-fit: cover;
-	filter: brightness(70%);
+	filter: brightness(60%);
 }
 
 .carousel-caption {
@@ -51,7 +51,7 @@ p, a {
 }
 
 #about-section {
-	background-image: url('img/black-woman.png'), linear-gradient(pink, rgb(220, 220, 220));
+	background-image: url('img/woman-bg.png'), linear-gradient(pink, rgb(220, 220, 220));
 	background-repeat: no-repeat;
 	background-position: left bottom;
 	padding: 80px 20px;
@@ -66,12 +66,11 @@ p, a {
 blockquote {
   background: transparent;
   border-left: 10px solid pink;
-  margin: 1.5em 10px;
+  margin: 100px 10px 0 10px;
   padding: 0.5em 10px;
   
 }
 blockquote:before {
-  
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
@@ -80,6 +79,10 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
+}
+
+blockquote span {
+	font-weight: bolder;
 }
 #services h2 {
 	text-align: center;
@@ -218,7 +221,7 @@ blockquote p {
 	padding-top: 10px;
 	font-size: 20px;
 }
-.email .contact-info_text a{
+ .contact-info_text a{
 	color: black;
 }
 
@@ -250,8 +253,8 @@ blockquote p {
 .fa-instagram {
 	color:  #E4405F;
 }
-.fa-twitter {
-	color: #00acee;
+.fa-whatsapp {
+	color: green
 }
 
 .footer {
