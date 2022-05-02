@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<title>Hadassah's Glam</title>
+		<title>Hadassah's Glam | Book an Appointment</title>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,16 +24,31 @@
 			#booking-form h1, #booking-form p {
 				text-align: center;
 			}
+			
+			.pay-to {
+				text-align: center;
+				background-color: pink;
+				border-radius: 5px;
+				padding: 10px;
+				margin-bottom: 20px;
+			}
+
+			.form-intro a {
+				color: black;
+				text-decoration: underline;
+				
+			}
 
 			#booking-form form {
 				border: 2px solid pink;
 				padding: 20px;
-				border-radius: 5px;;
+				border-radius: 5px;
 			}
 
 			#booking-form form .form-control {
 				border: 1px solid pink;
 			}
+
 
 			textarea {
 				border: 1px solid pink;
@@ -70,7 +85,7 @@
 
 			@media screen and (min-width: 768px) {
 
-				#booking-form form {
+				#booking-form {
 					width: 50vw;
 					margin: 0 auto;
 				}
@@ -132,9 +147,19 @@
 
 		<main>
 			<section id="booking-form">
-				<h1>Book an Appointment</h1>
-				<p>Please fill the form below to schedule an appointment and we'll contact you shortly. Please do well to book at least 2 days in advance. Also please note that to book an appointment you need to pay at least 70% of the fees in advance. </p>
-
+				<div class="form-intro">
+					<h1>Book an Appointment</h1>
+					<p>Please fill the form below to schedule an appointment and we'll contact you shortly. Please do well to book at least 2 days in advance. Also please note that to book an appointment you need to pay at least 70% of the fees in advance. <br> <a href="index.html#price-list" target="_blank" rel="noopener noreferrer">view rate card</a> </p>
+					
+				</div>
+				
+				<div class="pay-to">
+					<h2>Pay To</h2>
+					<p>Account Number: 3230033531</p>
+					<p>Account Name: Adekunle Esther Olayemi</p>
+					<p>Bank: Eco Bank</p>
+					
+				</div>
 				<form action="" class="booking-form">
 					<label for="name">Full Name:</label>
 					<input type="text" class="form-control" placeholder="Your full name">
