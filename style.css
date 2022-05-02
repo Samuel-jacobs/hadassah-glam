@@ -51,7 +51,7 @@ p, a {
 }
 
 #about-section {
-	background-image: url('img/woman-bg.png'), linear-gradient(pink, rgb(220, 220, 220));
+	background-image: url('img/black-woman.png'), linear-gradient(pink, rgb(220, 220, 220));
 	background-repeat: no-repeat;
 	background-position: left bottom;
 	padding: 80px 20px;
