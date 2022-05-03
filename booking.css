@@ -1,0 +1,82 @@
+#booking-form {
+	padding: 50px 30px;
+}
+#booking-form h1, #booking-form p {
+	text-align: center;
+}
+
+.pay-to {
+	text-align: center;
+	background-color: pink;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.form-intro a {
+	color: black;
+	text-decoration: underline;
+	
+}
+
+#booking-form form {
+	border: 2px solid pink;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+#booking-form form .form-control {
+	border: 1px solid pink;
+}
+
+
+textarea {
+	border: 1px solid pink;
+}
+.purpose {
+	border: 1px solid pink;
+}
+
+label {
+	font-weight: bold;
+	padding-top: 20px;
+}
+
+.submit-btn {
+	border: 2px solid pink;
+	margin-top: 20px;
+}
+.submit-btn:hover {
+	background-color: pink;
+	color: white;
+}
+
+.contact-info {
+	background: inherit;
+}
+#footer-contact {
+	background: linear-gradient(pink, white);
+}
+#footer-contact .socials {
+	background: none;
+	padding-bottom: 30px;
+}
+#thankyou {
+	padding: 50px;
+	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+
+	#booking-form {
+		width: 50vw;
+		margin: 0 auto;
+	}
+	.contact-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+
+}

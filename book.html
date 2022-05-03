@@ -16,87 +16,9 @@
 		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC&family=Kaushan+Script&family=Lobster&family=Merriweather:wght@300&family=Open+Sans&family=Patrick+Hand&display=swap" rel="stylesheet">
 		<!--main css-->
 		<link rel="stylesheet" href="style.css">
-
+		<link rel="stylesheet" href="booking.css">
 		<style>
-			#booking-form {
-				padding: 50px 30px;
-			}
-			#booking-form h1, #booking-form p {
-				text-align: center;
-			}
 			
-			.pay-to {
-				text-align: center;
-				background-color: pink;
-				border-radius: 5px;
-				padding: 10px;
-				margin-bottom: 20px;
-			}
-
-			.form-intro a {
-				color: black;
-				text-decoration: underline;
-				
-			}
-
-			#booking-form form {
-				border: 2px solid pink;
-				padding: 20px;
-				border-radius: 5px;
-			}
-
-			#booking-form form .form-control {
-				border: 1px solid pink;
-			}
-
-
-			textarea {
-				border: 1px solid pink;
-			}
-			.purpose {
-				border: 1px solid pink;
-			}
-
-			label {
-				font-weight: bold;
-				padding-top: 20px;
-			}
-
-			.submit-btn {
-				border: 2px solid pink;
-				margin-top: 20px;
-			}
-			.submit-btn:hover {
-				background-color: pink;
-				color: white;
-			}
-
-			.contact-info {
-				background: inherit;
-			}
-			#footer-contact {
-				background: linear-gradient(pink, white);
-			}
-			#footer-contact .socials {
-				background: none;
-				padding-bottom: 30px;
-			}
-			
-
-			@media screen and (min-width: 768px) {
-
-				#booking-form {
-					width: 50vw;
-					margin: 0 auto;
-				}
-				.contact-wrapper {
-					display: flex;
-					flex-direction: row;
-					justify-content: space-around;
-				}
-
-
-			}
 		</style>
 	</head>
 	<body>
@@ -160,18 +82,20 @@
 					<p>Bank: Access Bank</p>
 					
 				</div>
-				<form action="" class="booking-form">
+				<form action="https://formsubmit.co/jacobssamuel57@gmail.com" class="booking-form">
+					<input type="hidden" name="_next" value="https://hadassahsglam/thankyou.html">
+					<input type="hidden" name="_subject" value="New Booking request">
 					<label for="name">Full Name:</label>
-					<input type="text" class="form-control" placeholder="Your full name">
+					<input type="text" name="name" class="form-control" placeholder="Your full name" required>
 
 					<label for="email">Email Address:</label>
-					<input type="email" name="email" id="email" placeholder="Your email address" class="form-control">
+					<input type="email" name="email" id="email" placeholder="Your email address" class="form-control" required>
 
 					<label for="phone">Phone Number:</label>
-					<input type="tel" name="phone" id="phone" placeholder="Your phone number" class="form-control">
+					<input type="tel" name="phone" id="phone" placeholder="Your phone number" class="form-control" required>
 
 					<label for="purpose">Purpose of Appointment:</label>
-					<select name="purpose" class="custom-select purpose" id="purpose">
+					<select name="purpose" class="custom-select purpose" id="purpose" required>
 						<option value="wedding">Wedding</option>
 						<option value="birthday">Birthday</option>
 						<option value="graduation">Graduation</option>
@@ -179,7 +103,7 @@
 					</select>
 
 					<label for="location">Location:</label>
-					<select name="location" class="custom-select purpose" id="location">
+					<select name="location" class="custom-select purpose" id="location" required>
 						<option value="Studio">Studio</option>
 						<option value="home">Home service(gwagz)</option>
 						<option value="home2">Home service(town)</option>
@@ -187,15 +111,15 @@
 					
 
 					<label for="date">Date/Time of Appointment:</label>
-					<input type="datetime-local" name="date" id="date" class="form-control">
+					<input type="datetime-local" name="date" id="date" class="form-control" required>
 
 					<label for="message">Additional Note:</label>
 					<textarea name="message" placeholder="Your message..." class="form-control" id="message" cols="30" rows="10"></textarea>
 
-					<button type="submit" name="submit-btn" class="submit-btn">Submit</button>
+					<button type="submit" name="submit" class="submit-btn">Submit</button>
 				</form>
 			</section>
-
+<a href="thankyou.html">thank you</a>
 		<section id="footer-contact">
 			<div class="contact-wrapper">
 				<div class="contact-info">
