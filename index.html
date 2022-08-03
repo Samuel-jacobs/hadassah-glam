@@ -5,7 +5,7 @@
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="keywords" content="Hadassah's glam, Professional makeup artist in Abuja, bridal makeup artist, gele tying, events makeup artist" />
+		<meta name="keywords" content="Hadassah's glam, Professional makeup artist in Abuja, bridal makeup artist, gele tying, events makeup artist" >
 		<meta name="description" content="In search of a professional makeup artist? At Hadassah's Glam, we offer professional makeup services for various events like weddings, birthdays, graduation, etc. We also offer gele tying services, makeup classes and we sell quality makeup products. We're located in abuja.">
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -20,7 +20,7 @@
 	</head>
 	<body>
 		<header>
-			<nav id="nav" class="navbar navbar-expand-sm">
+			<!--<nav id="nav" class="navbar navbar-expand-sm">
 				<a href="index.html" class="navbar-brand"> <img src="img/logo.png" alt="hadassah glam logo"> </a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 					<span><i class="fas fa-bars"></i></span>
@@ -30,9 +30,9 @@
 						<li class="nav-item">
 							<a href="index.html" class="nav-link">Home</a>
 						</li>
-						<!--<li class="nav-item">
+						<li class="nav-item">
 							<a href="#about-section" class="nav-link">About</a>
-						</li> -->
+						</li>
 						<li class="nav-item">
 							<a href="#portfolio" class="nav-link">Portfolio</a>
 						</li>
@@ -48,7 +48,29 @@
 						</li>
 					</ul>
 				</div>
-			</nav>
+			</nav>  -->
+			<div class="topnav" id="myTopnav">
+				<div class="nav-logo">
+					<a href="index.html" class="navbar-brand"> <img src="img/logo.png" alt="hadassah glam logo"> </a>
+				</div>
+				
+				<div class="overlay" id="myNav">
+					<div class="overlay-top">
+						<a href="javascript:void(0)" class="closeBtn" 
+						onclick="closeNav()">&times;</a>
+					</div>
+					<div class="navlinks">
+						<a class="navlink" href="#portfolio">Portfolio</a>
+						<a class="navlink" href="#price-list">Rate Card</a>
+						<a class="navlink" href="book.html">Book Online</a>
+						<a class="navlink" href="#contact">Contact</a>
+						
+					</div>
+				</div>
+				<span onclick="openNav()" class="openBtn"><i class="fas fa-bars"></i></span>
+			 
+			</div>
+
 
 			<div class="carousel">
 				<div class="carousel-inner">
@@ -71,60 +93,53 @@
 
 					</div>
 					<div class="col-md-8 about-text">
-						<h1>Hello Beautiful</h1>
-						<p>The most alluring thing a woman can do is have confidence. Here at Hadassah's Glam, we make sure that you walk out of our studio looking great and feeling confident as ever.</p>
-						<blockquote>
-							<p><span>I believe that all women are pretty without makeup, but  the right makeup can be pretty powerful"</span> - Bobby Brown</p>
-						</blockquote>
+						<div class="about-text-wrapper">
+							<h1>Hello Beautiful</h1>
+							<p>The most alluring thing a woman can do is have confidence. Here at Hadassah's Glam, we make sure that you walk out of our studio looking great and feeling confident as ever.</p>
+							<blockquote>
+								<p><span>I believe that all women are pretty without makeup, but  the right makeup can be pretty powerful"</span> - Bobby Brown</p>
+							</blockquote>
+						</div>
+						
 						
 					</div>
 					
 				</div>
 			</section>
 			<section id="services">
-				<h2 class="pb-4">OUR SERVICES</h2>
+				<h2 class="pb-5 heading">What We Do</h2>
 				<div class="row service-wrapper">
-					<div class="col-md-3">
-						<div class="service-item shadow-sm">
-							<div class="service-item_image">
-								<img src="img/service-img3.jpeg" class="service-img" alt="black woman">
-							</div>
-							
-							<div class="service-item-text">
+					<div class="col-md-6">
+						<div class="service-item card shadow-sm">
+							<img src="img/service-img3.jpeg" class="card-img-top" alt="black woman">
+							<div class="card-body">
 								<h3>Makeup</h3>
 								<p>We provide makeup services for Weddings, birthdays and other events.</p>
 							</div>
 						</div>
 					</div> <!--end of first service card-->
-					<div class="col-md-3">
-						<div class="service-item shadow-sm">
-							<div class="service-item_image">
-								<img src="img/portfolio-img1.jpeg" class="service-img" alt="black woman">
-							</div>
-							
-							<div class="service-item-text">
+					<div class="col-md-6">
+						<div class="service-item card shadow">
+							<img src="img/portfolio-img1.jpeg" class="card-img-top" alt="black woman">
+							<div class="card-body">
 								<h3>Gele Tying</h3>
 								<p>We provide Gele tying services for different occasions.</p>
 							</div>
 						</div>
 					</div> <!--end of first service card-->
-					<div class="col-md-3">
-						<div class="service-item shadow-sm">
-							<div class="service-item_image">
-								<img src="img/service-img.jpg" class="service-img" alt="black woman">
-							</div>	
-							<div class="service-item-text">
-								<h3>Sale of Makeup Products</h3>
+					<div class="col-md-6">
+						<div class="service-item card shadow">
+							<img src="img/service-img.jpg" class="card-img-top" alt="black woman">
+							<div class="card-body">
+								<h3>Makeup Products</h3>
 								<p class="pl-4 pr-4">We sell Authentic Makeup Products at Affordable prices </p>
 							</div>
 						</div>
 					</div> <!--end of second service card-->
-					<div class="col-md-3">
-						<div class="service-item mb-5 shadow-sm">
-							<div class="service-item_image">
-								<img src="img/service-img2.jpg" class="service-img" alt="black woman">
-							</div> 
-							<div class="service-item-text">
+					<div class="col-md-6">
+						<div class="service-item card shadow-sm">
+							<img src="img/service-img2.jpg" class="card-img-top" alt="black woman">	
+							<div class="card-body">
 								<h3>Training</h3>
 								<p>We Offer Makeup and Gele Tying classes.</p>
 							</div>
@@ -137,7 +152,7 @@
 			</section>
 			<hr class="my-4">
 			<section id="portfolio">
-				<h2 class="pb-4">RECENT WORKS </h2>
+				<h2 class="pb-4 heading">Our Recent Works</h2>
 				<div class="row">
 					<div class="col-sm-4">
 						<img src="img/portfolio-img7.jpeg" alt="">
@@ -163,92 +178,92 @@
 
 			<hr class="my-4">
 			<section id="price-list">
-				<h1>RATE CARD</h1>
-				<div class="studio">
-					<h3>STUDIO MAKEUP</h3>
+				<div class="price-list-wrapper">
+					<h2 class="heading text-center pb-4">RATE CARD</h2>
+					<div class="studio">
+						<h3>STUDIO MAKEUP</h3>
+						<div class="studio-item pt-3">
+							<p>Casual Makeup</p>
+							<p>N6500</p>
+						</div>
+						<div class="studio-item">
+							<p>Owanbe Makeup</p>
+							<p>N7500</p>
+						</div>
+						<div class="studio-item">
+							<p>Birthday Makeup</p>
+							<p>N6500</p>
+						</div>
+					</div>
+					<div class="home-service pt-3">
+						<h3>Home Service (Town)</h3>
+						<p>All home services in town cost N15,000</p>
+					</div>
+					<div class="home-service pt-3">
+						<h3>Home Service(Gwagz)</h3>
+						<p>All home services within gwagz costs N8500</p>
+					</div>
 					<div class="studio-item pt-3">
-						<p>Casual Makeup</p>
-						<p>N6500</p>
-					</div>
-					<div class="studio-item">
-						<p>Owanbe Makeup</p>
-						<p>N7500</p>
-					</div>
-					<div class="studio-item">
-						<p>Birthday Makeup</p>
-						<p>N6500</p>
+						<p class="bridal">Bridal Makeup</p>
+						<p>N35,000 per day</p>
 					</div>
 				</div>
-				<div class="home-service pt-3">
-					<h3>Home Service (Town)</h3>
-					<p>All home services in town cost N15,000</p>
-				</div>
-				<div class="home-service pt-3">
-					<h3>Home Service(Gwagz)</h3>
-					<p>All home services within gwagz costs N8500</p>
-				</div>
-				<div class="studio-item pt-3">
-					<p class="bridal">Bridal Makeup</p>
-					<p>N35,000 per day</p>
-				</div>
+				
 			</section>
 
-			<hr class="line">
 			<section id="contact">
-				<h2>GET IN TOUCH</h2>
-				<p class="text-center pl-3 pr-3">Got any questions? send a message now and we'll respond as soon as possible. You can also place a call or reach us on social media.</p>
-				<div class="contact-wrapper row">
+				
+				<!--<div class="contact-wrapper">
 					<div class="col-md-6">
-						<!--<form name="contact" class="contact-form" method="POST" data-netlify="true">
+						<form name="contact" class="contact-form" method="POST" data-netlify="true">
 							<input type="text" class="form-control" placeholder="Name">
 							<input type="email" placeholder="Email Address" class="form-control">
 							<input type="tel" class="form-control"  name="" id="" placeholder="Phone Number">
 							<input type="text" class="form-control" placeholder="Subject">
 							<textarea name="message" placeholder="Your message..." class="form-control" id="message" cols="30" rows="10"></textarea>
 							<input type="submit" value="submit" class="submit-btn">
-						</form> -->
+						</form> 
+					</div>-->
+				
+				<div class="contact-wrapper">
+					<div class="contact-cta">
+						<h2 class="heading">Ready For a makeup Session?</h2>
+						<a href="book.html" target="_blank" class="f-link shadow">Book an appointment</a>
 					</div>
-					
-					<div class="col-md-6">
-						<div class="contact-wrapper">
-							<div class="contact-info">
-								<!--<h2 class="pb-3">Contact Us</h2>-->
-								<div class="phone">
-									<i class="fas fa-phone"></i>
-									<div class="contact-info_text">
-										<h6>Phone</h6>
-										<p><a href="tel:+09121587300">09121587300</a>   <br> <a href="https://api.whatsapp.com/send?phone=2349054124855&text=Hello%20Hadassahs%20glam%20%F0%9F%91%8B" target="_blank">09054124855(whatsapp)</a> </p>							
-									</div>
-								</div>
-								<div class="email">
-									<i class="fas fa-envelope"></i>
-									<div class="contact-info_text">
-										<h6>Email</h6>
-										<a href="mailto:iamolayemiade@gmail.com">iamolayemiade@gmail.com</a>
-									</div>
-								</div>
-								<div class="address pt-3">
-									<i class="fas fa-map-marker-alt"></i>
-									<div class="contact-info_text">
-										<h6>Address</h6>
-										<p>No, 7 ST Paul’s street 
-											Phase 3, Gwagwalada Abuja</p>
-									</div>	
-								</div>
-								<div class="socials">
-									<h6 class="pb-4">Find Us on social media</h6>
-									<a target="_blank" href="https://www.facebook.com/profile.php?id=100079134315128"><i class="fab fa-facebook"></i></a>
-									<a href="http://instagram.com/Hadassahs_glam" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-									<a href="https://api.whatsapp.com/send?phone=2349054124855&text=Hello%20Hadassahs%20glam%20%F0%9F%91%8B" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
-								</div><!--end of socials divs-->
-							</div><!--end of contact info-->
-						</div> <!--end oof contact wrapper-->	
+					<div class="contact-info">
+						<h2 class="pb-2">Contact Us</h2>
+						<div class="phone">
+							<i class="fas fa-phone"></i>
+							<div class="contact-info_text">
+								<p><a href="tel:+09121587300">09121587300</a>   <br> <a href="https://api.whatsapp.com/send?phone=2349054124855&text=Hello%20Hadassahs%20glam%20%F0%9F%91%8B" target="_blank">09054124855(whatsapp)</a> </p>							
+							</div>
+						</div>
+						<div class="email">
+							<i class="fas fa-envelope"></i>
+							<a href="mailto:iamolayemiade@gmail.com">iamolayemiade@gmail.com</a>
+						</div>
+						<div class="address">
+							<i class="fas fa-map-marker-alt"></i>
+							<p>No, 7 ST Paul’s street Phase 3, Gwagwalada Abuja</p>	
+						</div>			
+					</div><!--end of contact info-->
+
+					<div class="socials">
+						<h2 class="pb-2">Connect With us</h2>
+						<a target="_blank" href="https://www.facebook.com/profile.php?id=100079134315128"><i class="fab fa-facebook"></i></a>
+						<a href="http://instagram.com/Hadassahs_glam" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+						<a href="https://api.whatsapp.com/send?phone=2349054124855&text=Hello%20Hadassahs%20glam%20%F0%9F%91%8B" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+					</div>
+
+				</div>
+				<div class="footer">
+					<p>&copy; copyright Hadassah's Glam 2022. Built by <a href="https://digitalhubwebsolutions.netlify.app">DigitalHub Web Solutions</a></p>
+				</div>
 			</section>
-			<div class="footer">
-				<p>&copy; copyright Hadassah's Glam 2022. Built by <a href="">Samuel Jacobs</a></p>
-			</div>
+			
 		</main>
 		
+		<script src="control.js"></script>
 			
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->

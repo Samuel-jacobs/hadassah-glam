@@ -45,18 +45,15 @@ label {
 .submit-btn {
 	border: 2px solid pink;
 	margin-top: 20px;
-}
-.submit-btn:hover {
-	background-color: pink;
-	color: white;
+	background-color: transparent;
+	padding: 5px 10px;
+	border-radius: 5px;
 }
 
 .contact-info {
 	background: inherit;
 }
-#footer-contact {
-	background: linear-gradient(pink, white);
-}
+
 #footer-contact .socials {
 	background: none;
 	padding-bottom: 30px;

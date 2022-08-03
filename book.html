@@ -24,35 +24,28 @@
 	</head>
 	<body>
 		<header>
-			<nav id="nav" class="navbar navbar-expand-sm">
-				<a href="index.html" class="navbar-brand"> <img src="img/logo.png" alt="hadassah glam logo"> </a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar1">
-					<span><i class="fas fa-bars"></i></span>
-				</button>
-				<div id="collapsibleNavbar1" class="collapse shadow-sm navbar-main navbar-collapse">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a href="index.html" class="nav-link">Home</a>
-						</li>
-						<!--<li class="nav-item">
-							<a href="index.html#about-section/" class="nav-link">About</a>
-						</li>-->
-						<li class="nav-item">
-							<a href="index.html#portfolio" class="nav-link">Portfolio</a>
-						</li>
-						<li class="nav-item">
-							<a href="index.html#price-list" class="nav-link">Rate Card</a>
-						</li>
-						<li class="nav-item">
-							<a href="book.html" class="nav-link">Book Online</a>
-						</li>
-						<li class="nav-item">
-							<a href="index.html#contact" class="nav-link">Contact</a>
-						</li>
-					</ul>
+			<div class="topnav" id="myTopnav">
+				<div class="nav-logo">
+					<a href="index.html" class="navbar-brand"> <img src="img/logo.png" alt="hadassah glam logo"> </a>
 				</div>
-			</nav>
+				
+				<div class="overlay" id="myNav">
+					<div class="overlay-top">
+						<a href="javascript:void(0)" class="closeBtn" 
+						onclick="closeNav()">&times;</a>
+					</div>
+					<div class="navlinks">
+						<a class="navlink" href="index.html">Home</a>
+						<a class="navlink" href="#portfolio">Portfolio</a>
 
+						<a class="navlink" href="#price-list">Rate Card</a>
+						<a class="navlink" href="#contact">Contact</a>
+						
+					</div>
+				</div>
+				<span onclick="openNav()" class="openBtn"><i class="fas fa-bars"></i></span>
+			 
+			</div>
 		
 
 			<div class="carousel">
@@ -71,7 +64,7 @@
 		<main>
 			<section id="booking-form">
 				<div class="form-intro">
-					<h1>Book an Appointment</h1>
+					<h2 class="text-center pb-5">Book an Appointment</h2>
 					<p>Please fill the form below to schedule an appointment and we'll contact you shortly. Please do well to book at least 2 days in advance. Also please note that to book an appointment you need to pay at least 70% of the fees in advance. <br> <a href="index.html#price-list" target="_blank" rel="noopener noreferrer">Check our Rates</a> </p>
 					
 				</div>
@@ -120,47 +113,46 @@
 					<button type="submit" name="submit" class="submit-btn">Submit</button>
 				</form>
 			</section>
-		<section id="footer-contact">
+		<section id="contact">
 			<div class="contact-wrapper">
+				<div class="contact-cta">
+					<h2 class="heading">Ready For a makeup Session?</h2>
+					<a href="book.html" target="_blank" class="f-link shadow">Book an appointment</a>
+				</div>
 				<div class="contact-info">
-					<h2 class="pb-3">Contact Us</h2>
+					<h2 class="pb-2">Contact Us</h2>
 					<div class="phone">
 						<i class="fas fa-phone"></i>
 						<div class="contact-info_text">
-							<h6>Phone</h6>
-							<p><a href="tel:+09121587300">09121587300</a>   <br> <a href="https://api.whatsapp.com/send?phone=2349054124855&text=Hello%20Hadassahs%20glam%20%F0%9F%91%8B" target="_blank" rel="noopener noreferrer">09054124855(whatsapp)</a> </p>	
+							<p><a href="tel:+09121587300">09121587300</a>   <br> <a href="https://api.whatsapp.com/send?phone=2349054124855&text=Hello%20Hadassahs%20glam%20%F0%9F%91%8B" target="_blank">09054124855(whatsapp)</a> </p>							
 						</div>
 					</div>
 					<div class="email">
 						<i class="fas fa-envelope"></i>
-						<div class="contact-info_text">
-							<h6>Email</h6>
-							<a href="mailto:iamolayemiade@gmail.com">iamolayemiade@gmail.com</a>
-						</div>
+						<a href="mailto:iamolayemiade@gmail.com">iamolayemiade@gmail.com</a>
 					</div>
-					<div class="address pt-3">
+					<div class="address">
 						<i class="fas fa-map-marker-alt"></i>
-						<div class="contact-info_text">
-							<h6>Address</h6>
-							<p>No, 7 ST Paul’s street 
-								Phase 3, Gwagwalada Abuja</p>
-						</div>	
-					</div>
-				</div>
+						<p>No, 7 ST Paul’s street Phase 3, Gwagwalada Abuja</p>	
+					</div>			
+				</div><!--end of contact info-->
+
 				<div class="socials">
-					<h6 class="pb-4">Find Us on social media</h6>
+					<h2 class="pb-2">Connect With us</h2>
 					<a target="_blank" href="https://www.facebook.com/profile.php?id=100079134315128"><i class="fab fa-facebook"></i></a>
 					<a href="http://instagram.com/Hadassahs_glam" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-					<a href="https://api.whatsapp.com/send?phone=2349054124855&text=Hello%20Hadassahs%20glam%20%F0%9F%91%8B" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>	
+					<a href="https://api.whatsapp.com/send?phone=2349054124855&text=Hello%20Hadassahs%20glam%20%F0%9F%91%8B" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
 				</div>
-			</div> <!--end oof contact wrapper-->		
+
+			</div>
+			<div class="footer">
+				<p>&copy; copyright Hadassah's Glam 2022. Built by <a href="https://digitalhubwebsolutions.netlify.app">DigitalHub Web Solutions</a></p>
+			</div>
 		</section>
+	</main>
 
-	<div class="footer">
-		<p>&copy; copyright Hadassah's Glam 2022. Built by <a href="">Samuel Jacobs</a></p>
-	</div>
-		</main>
 
+		<script src="control.js"></script>
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
