@@ -80,9 +80,10 @@ p, a {
 	font-size: 3rem;
 	font-weight: bolder;
 }
+
 blockquote {
   background: transparent;
-  border-left: 10px solid pink;
+  border-left: 10px solid #d87093;
   margin: 100px 10px 0 10px;
   padding: 0.5em 10px;
   
@@ -111,7 +112,7 @@ blockquote span {
 	text-align: center;
 }
 #services {
-	padding: 50px;
+	padding: 50px 20px;
 	text-align: center;
 }
 .service-wrapper {
@@ -254,21 +255,28 @@ blockquote span {
 
 
 .socials .fab {
-	border: 2px solid white;
 	border-radius: 50%;
-	padding: 10px;
-	margin-right: 10px;
+	
+	margin-right: 20px;
 	text-align: center;
 	transform: scale(1);
 	transition: transform 0.3s ease;
-	font-size: 20px;
-	color: black;
+	font-size: 25px;
+	
 }
 .fab:hover {
 	font-size: 30px;
 	transform: scale(1.2);
 }
-
+.fa-facebook {
+	color: #4267b2;
+}
+.fa-whatsapp {
+	color: #25d366;
+}
+.fa-instagram {
+	color: #5851db;
+}
 
 .footer {
 	padding-left: 20px;
@@ -349,9 +357,18 @@ blockquote span {
 	#about-section {
 		height: 100vh;
 		background-size: cover;
+		filter: brightness(120%);
 	}
+	.about-text {
+		padding-top: 15%;
+	}
+	
 	.about-text p{
 		font-size: 1.5rem;
+		
+	}
+	.about-text .center {
+		text-align: center;
 	}
 
 
