@@ -14,9 +14,11 @@ body {
 	width: 100%;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Bellefair', cursive;
 	font-weight: bolder;
+	
 }
 h1 {
 	font-size: 5rem;
@@ -28,6 +30,9 @@ p, a {
 .heading {
 	font-weight: bolder;
 	font-size: 3rem;
+}
+.uppercase {
+	text-transform: uppercase;
 }
 
 .topnav {
@@ -357,15 +362,19 @@ blockquote span {
 	#about-section {
 		height: 100vh;
 		background-size: cover;
-		filter: brightness(120%);
+		filter: brightness(80%);
 	}
 	.about-text {
 		padding-top: 15%;
 	}
+	.about-text  h2 {
+		color: white;
+		text-transform: uppercase;
+	}
 	
 	.about-text p{
 		font-size: 1.5rem;
-		
+		color: white;
 	}
 	.about-text .center {
 		text-align: center;
