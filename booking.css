@@ -26,16 +26,12 @@
 }
 
 #booking-form form .form-control {
-	border: 1px solid pink;
+	background-color: pink;
+}
+.custom-select {
+	background-color: pink;
 }
 
-
-textarea {
-	border: 1px solid pink;
-}
-.purpose {
-	border: 1px solid pink;
-}
 
 label {
 	font-weight: bold;
@@ -43,16 +39,21 @@ label {
 }
 
 .submit-btn {
-	border: 2px solid pink;
+	border: none;
 	margin-top: 20px;
-	background-color: transparent;
+	background-color: pink;
 	padding: 5px 10px;
 	border-radius: 5px;
 }
 
+#contact {
+	border-top: none;
+	
+}
 .contact-info {
 	background: inherit;
 }
+
 
 #footer-contact .socials {
 	background: none;

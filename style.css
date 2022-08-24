@@ -25,7 +25,7 @@ h1 {
 }
 p, a {
 	font-family: 'Barlow Condensed', sans-serif;
-	font-weight: bold;
+	
 }
 .heading {
 	font-weight: bolder;
@@ -72,15 +72,15 @@ p, a {
 }
 
 #about-section {
-	background-image: url('img/black-woman.png');
-	background-repeat: no-repeat;
-	background-position: left bottom;
-	
 	padding: 80px 20px;
 	line-height: 1.3;
 	font-size: 1.5rem;
 }
 
+.about-image img {
+	height: 100%;
+	width: 100%;
+}
 #about-section .about-text h1 {
 	font-size: 3rem;
 	font-weight: bolder;
@@ -119,46 +119,51 @@ blockquote span {
 #services {
 	padding: 50px 20px;
 	text-align: center;
-}
-.service-wrapper {
-	
-	margin-inline: auto;
-}
-.service-wrapper .col-md-6 {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 }
-.service-item {
+
+.service-wrapper {
 	margin-inline: auto;
 }
+
  .card {	
-	height: 90%;
-	width: 400px;
-	padding: 10px;
+	width: 350px;
 	margin: 20px 0;
-	border-radius: 5px;
-	background-color: pink;
+	border-radius: 10px;
 }
 .card-img-top {
-	height: 400px;
+	width: 350px;
+	height: 350px;
+	object-fit: cover;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.card-body h4 {
+	color: #d87093;
 }
 
-#services .service-link {
-	margin: 0 auto;	
-	border: 1px solid pink;
-	color: black;
-	padding: 5px 15px;
-	font-size: 0.8rem;
-	border-radius: 5px;
-}
-#services .service-link:hover {
+
+.link-btn {
 	color: white;
 	text-decoration: none;
-	background-color: pink;
+	background-color: #d87093;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin: 0 auto;	
+	transition: .5s;
 }
-
+.link-btn:hover {
+	margin: 0 auto;	
+	border: 2px solid #d87093;
+	color: black;
+	background-color: white;
+	border-radius: 5px;
+	transition: .5s;
+}
 .my-4 {
-	background-color: pink;
+	background-color: #d87093;
 }
 
 #portfolio {
@@ -189,6 +194,7 @@ blockquote span {
 
 #price-list {
 	padding: 30px;
+	background: linear-gradient(white, pink);
 }
 #price-list h1 {
 	text-align: center;
@@ -211,28 +217,29 @@ blockquote span {
 
 #contact {
 	margin-top: none;
+	border-top: 2px solid black;
 	padding-top: 50px;
-	background-color: #d87093;
+	background: linear-gradient(pink, white);
 	padding-bottom: 30px;
 }
 #contact h2 {
 	padding-bottom: 20px;
 }
 .f-link {
-	color: black;
+	color: white;
 	
-	background-color: white;
+	background-color: #d87093;
 	border-radius: 5px;
 	padding: 10px;
 	font-weight: bold;
 	font-size: large;
-	transform: scale(1);
 	transition: all .5s ease;
 }
 .f-link:hover {
 	color: black;
 	text-decoration: none;
-	transform: scale(1.5);
+	border: 2px solid #d87093;
+	background-color: transparent;
 }
 
 .phone, .email, .address {
@@ -282,7 +289,6 @@ blockquote span {
 .fa-instagram {
 	color: #5851db;
 }
-
 .footer {
 	padding-left: 20px;
 }
@@ -308,16 +314,15 @@ blockquote span {
 		height: 50%;
 	}
 	.overlay {
-		height: 0;
-		width: 100%;
+		height: 100%;
+		width: 0;
 		position: fixed;
 		z-index: 9999;
 		top: 0;
-		left: 0;
-		background-color: rgb(255, 194, 204, 0.9);
+		right: 0;
+		background-color: rgb(255, 194, 204);
 		overflow-x: hidden;
 		transition: 0.5s;
-		
 	}
 	.overlay-top {
 		display: flex;
@@ -333,11 +338,13 @@ blockquote span {
 		font-size: 30px;
 		text-decoration: none;
 		color: white;
+		font-size: 2rem;
 	}
 	.closeBtn:hover {
 		color: white;
-		text-decoration: none;;
+		text-decoration: none;
 	}
+
 	.navlinks {
 		position: relative;
 		text-align: center;
@@ -359,27 +366,25 @@ blockquote span {
 		transform: scale(1.1);
 	}
 
-	#about-section {
-		height: 100vh;
-		background-size: cover;
-		filter: brightness(80%);
-	}
+	
 	.about-text {
 		padding-top: 15%;
 	}
 	.about-text  h2 {
-		color: white;
 		text-transform: uppercase;
 	}
 	
 	.about-text p{
 		font-size: 1.5rem;
-		color: white;
+		
 	}
 	.about-text .center {
 		text-align: center;
 	}
 
+	.service-item {
+		margin-bottom: 50px;
+	}
 
 	#contact {
 		padding-left: 30px;
@@ -440,27 +445,42 @@ blockquote span {
 		transform: scale(1.15);
 	}
 
+	.carousel-caption h1 {
+		font-size: 5rem;
+	}
+
 	#about-section {
-		background-image: url('img/woman-bg.png');
-		height: 100vh;
+		padding-inline: 10%;
+	}
+	.about-wrapper {
+		display: flex;
+	}
+	.about-image {
+		width: 50%;
 	}
 	.about-text {
+		width: 50%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		padding-left: 5%;
 	}
 	.about-text-wrapper {
 		
-		width: 60%;
+		
 		align-self: center;
-		padding-top: 10%;
+		
 	}
 
 	#services {
 		padding-top: 100px;
 	}
 	.service-wrapper {
-		width: 80%;
+		
+		display: grid;
+		grid-template-columns: auto auto;
+		margin-inline: auto;
+		gap: 30px;
 	}
 	.service-item {
 		margin: 0px 10px 30px 10px;
