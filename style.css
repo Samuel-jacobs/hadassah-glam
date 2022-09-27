@@ -62,7 +62,7 @@ p, a {
 	border: 2px solid pink;
 	color: white;
 	padding: 5px 20px;
-	border-radius:  5px;
+	border-radius:  50px;
 	margin-top: 20px;
 	transition: all .5s ease;
 }
@@ -195,12 +195,12 @@ blockquote span {
 #price-list {
 	padding-block: 50px 80px;
 	padding-inline: 30px;
-	
+	background: linear-gradient(to right, #efd4e7, #f5eaee) ;
 }
 .price-list-wrapper {
 	border: 2px solid pink;
 	border-radius: 10px;
-	background-color: rgb(255, 192, 203, 0.9);
+	background-color: pink;
 	
 }
 .price-head {
@@ -456,7 +456,7 @@ blockquote span {
 	}
 	.navlinks a {
 		display: inline-block;
-		color: var(--VeryDarkBlue);
+		color: white;
 		margin-right: 20px;
 		font-size: larger;
 		transition: all .5s ease;
@@ -465,6 +465,7 @@ blockquote span {
 	.navlink:hover {
 		text-decoration: none;
 		transform: scale(1.15);
+		color: pink;
 	}
 
 	.carousel-caption h1 {

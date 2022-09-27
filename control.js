@@ -1,3 +1,35 @@
+//function to change on scroll 
+var prevScrollpos = window.pageYOffset;
+var navLinkNew = document.querySelectorAll(".navlink");
+
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  let y = window.matchMedia("(min-width: 768px)");
+  var navLinks = document.querySelectorAll(".navlink");  
+  if (prevScrollpos > 300) {  
+	document.getElementById("myTopnav").style.backgroundColor = "white";
+	if (y.matches) {
+			navLinks.forEach(navLink => {
+			navLink.style.color = "pink";
+		});
+	} else {
+			navLinks.forEach(navLink => {
+			navLink.style.color = "white";
+		});
+	}
+  } else {
+	document.getElementById("myTopnav").style.backgroundColor = "transparent";
+	navLinks.forEach(navLink => {
+		navLink.style.color = "white";
+	});
+  }; 
+  
+  prevScrollpos = currentScrollPos;
+};
+
+
+
+//function to close Nav
 function openNav() {
 	let x = window.matchMedia("(max-width: 768px)");
 	function myFunction(x) {
@@ -13,7 +45,7 @@ function openNav() {
 	x.addListener(myFunction);
 } 
 
-//function for opening nav
+//function to open Nav
 function closeNav() {
 	let x = window.matchMedia("(max-width: 768px)");
 	function myFunction(x) {
